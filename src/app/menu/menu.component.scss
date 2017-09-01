@@ -1,0 +1,29 @@
+.container {
+  height: 100%;
+  background: #11171c;
+}
+.search {
+  height: 120px;
+  background: #cc4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  input {
+    color: white;
+    height: 30px;
+    width: 180px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #eee;
+    padding-right: 25px;
+    font-size: 16px;
+    font-style: italic;
+    & + img {
+      height: 20px;
+      position: relative;
+      left: -20px;
+      cursor: pointer;
+    }
+  }
+}

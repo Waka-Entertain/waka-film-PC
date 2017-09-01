@@ -1,0 +1,12 @@
+.container {
+  height: 100vh;
+  overflow: scroll;
+  display: flex;
+  app-menu {
+    flex: 0 0 300px;
+    background: #1c242b;
+  }
+  router-outlet {
+    flex: 1 1 auto;
+  }
+}
