@@ -1,6 +1,7 @@
 .container {
   height: 100%;
-  background: #11171c;
+  background: $dark;
+  margin-top: $navHeight;
 }
 .search {
   height: 120px;

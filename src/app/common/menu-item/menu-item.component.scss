@@ -1,9 +1,12 @@
 H3 {
   color: #36454d;
   font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  font-weight: bold;
 }
 .menu {
-  padding: 20px 20px 20px 20px;
+  padding: 20px 0px;
   ul {
     padding: 0px;
     margin: 0px;
@@ -11,18 +14,17 @@ H3 {
   li {
     display: block;
     font-size: 16px;
-    color: white;
-    padding: 15px 10px;
-    border-radius: 5px;
+    color: $fontGrey;
+    padding: 15px 0px;
+    padding-left: 50px;
     cursor: pointer;
     margin: 0px;
-    &:hover {
-      background-color: #1c242b;
-    }
-    .icon {
-      margin-right: 1.3rem;
-      width: 1.3rem;
-      height: 1.3rem;
-    }
+    text-transform: uppercase;
+    transition: 300ms;
+  }
+  .active li,
+  li:hover {
+    color: $theme;
+    background-color: $grey;
   }
 }

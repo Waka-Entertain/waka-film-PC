@@ -15,14 +15,17 @@ import { ElectronService } from './providers/electron.service';
 import { MenuComponent } from './menu/menu.component';
 
 import { CommonModule } from './common/common.module';
+import { DiscoverModule } from './discover/discover.module';
+import { HeaderComponent } from './header/header.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MenuComponent],
+  declarations: [AppComponent, HomeComponent, MenuComponent, HeaderComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    DiscoverModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]

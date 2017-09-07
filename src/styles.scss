@@ -1,10 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Microsoft YaHei';
-  height: 100%;
+  font-family: 'Muli', 'Microsoft YaHei';
+  background: #222b31;
 }
 svg.icon {
   width: 1em;
@@ -12,4 +11,8 @@ svg.icon {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+a:-webkit-any-link {
+  text-decoration: none !important;
+  font-style: normal;
 }

@@ -1,0 +1,25 @@
+<H2>
+  Discover
+</H2>
+<main>
+  <ul>
+    <li *ngFor='let movie of movies'>
+
+      <div class="mask">
+        <span>
+          <i></i>
+        </span>
+      </div>
+      <span class="rate" [ngClass]="movie.vote_average<6.5?'bad':'good'">{{movie.vote_average}}</span>
+      <img [src]="'https://image.tmdb.org/t/p/w185_and_h278_bestv2'+movie.poster_path" alt="">
+      <div class="discri">
+        <p class="title">{{movie.title}}</p>
+        <p class="remark">
+          <span *ngFor='let genre of movie.genre_ids.slice(0,2)'>{{genre |genre}}
+          </span>
+        </p>
+        <p class="remark">{{movie.release_date}}</p>
+      </div>
+    </li>
+  </ul>
+</main>

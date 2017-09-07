@@ -1,6 +1,10 @@
-Can't bind to 'routerLink' since it isn't a known property of 'a'. ("
+<div class="menu">
+  <H3>{{title}}</H3>
   <ul>
-    <li *ngFor="let item of items">
-      <a [ERROR ->][routerLink]="item.link">
-      <svg class="icon" aria-hidden="true">
-    <use [attr.xlink:href]="i")
+    <a *ngFor="let item of items" [routerLink]="item.url" routerLinkActive="active">
+      <li >
+        {{item.title}}
+      </li>
+    </a>
+  </ul>
+</div>

@@ -1,0 +1,64 @@
+.container {
+  background: $theme;
+  height: $navHeight;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  .logo {
+    background: $themeDark;
+    flex: 0 1 $left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    p {
+      margin-left: 5px;
+    }
+  }
+  .pannel {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+}
+.k {
+  display: inline-block;
+  width: 4px;
+  background: white;
+  min-height: 4px;
+  border-radius: 3px;
+  margin: 0.5px;
+}
+.j {
+  height: 8px;
+}
+.l {
+  height: 12px;
+}
+.search {
+  flex: 1 1 0;
+
+  input {
+    font-family: 'Muli', 'Microsoft YaHei';
+    font-size: 20px;
+    background: transparent;
+    border: 0px;
+    outline: none;
+    height: 40px;
+    width: 220px;
+    color: white;
+    vertical-align: middle;
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+svg {
+  color: white;
+  height: 40px;
+  width: 30px;
+  vertical-align: middle;
+}

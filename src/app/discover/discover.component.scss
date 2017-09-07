@@ -1,0 +1,111 @@
+h2 {
+  font-style: normal;
+  color: $fontWhite;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+li {
+  display: block;
+  flex: 0 1 185px;
+  margin: 30px;
+  line-height: 130%;
+  position: relative;
+  transition: all 0.3s;
+  .discri {
+    overflow: hidden;
+    width: 185px;
+  }
+
+  img {
+    box-shadow: 0px 0px 20px 1px $dark;
+  }
+
+  p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .title {
+    text-transform: capitalize;
+    font-size: 14px;
+    color: $title;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .remark {
+    color: $fontDarkBlue;
+    font-size: 14px;
+  }
+}
+
+li:hover {
+  .mask {
+    opacity: 1;
+  }
+}
+
+.mask {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 278px;
+  transition: 0.3s all;
+
+  span {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: white;
+    display: block;
+    margin-top: 120px;
+    margin-left: 68px;
+    position: relative;
+
+    i {
+      display: block;
+      height: 0;
+      width: 20px;
+      border: 10px solid rgba(255, 255, 255, 0);
+      border-left: 15px solid #cc4d4d;
+      position: absolute;
+      transform: translate(-5px, -50%);
+      top: 50%;
+      left: 50%;
+    }
+  }
+}
+
+.rate {
+  display: block;
+  height: 20px;
+  width: 50px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.good {
+  background: $yellow;
+}
+
+.bad {
+  background: $theme;
+}
+:host {
+  display: block;
+}
