@@ -4,12 +4,12 @@
 <main>
   <ul>
     <li *ngFor='let movie of movies'>
-
-      <div class="mask">
+      <a [routerLink]="['/detail',movie.id]"><div class="mask">
         <span>
           <i></i>
         </span>
       </div>
+      </a>
       <span class="rate" [ngClass]="movie.vote_average<6.5?'bad':'good'">{{movie.vote_average}}</span>
       <img [src]="'https://image.tmdb.org/t/p/w185_and_h278_bestv2'+movie.poster_path" alt="">
       <div class="discri">

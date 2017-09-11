@@ -16,18 +16,21 @@ import { MenuComponent } from './menu/menu.component';
 
 import { CommonModule } from './common/common.module';
 import { DiscoverModule } from './discover/discover.module';
+import { DetailModule } from './detail/detail.module';
 import { HeaderComponent } from './header/header.component';
+import { NavigatorComponent } from './navigator/navigator.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MenuComponent, HeaderComponent],
+  declarations: [AppComponent, HomeComponent, MenuComponent, HeaderComponent, NavigatorComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
     CommonModule,
-    DiscoverModule
+    DiscoverModule,
+    DetailModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

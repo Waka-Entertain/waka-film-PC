@@ -16,3 +16,6 @@ a:-webkit-any-link {
   text-decoration: none !important;
   font-style: normal;
 }
+::-webkit-scrollbar {
+    display: none;
+}

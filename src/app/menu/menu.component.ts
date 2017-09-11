@@ -9,10 +9,10 @@ export class MenuComponent implements OnInit {
   menu: menuItem[];
   constructor() {
     this.menu = [
-      { icon: '#icon-jitui', title: 'Playing', url: '/playing' },
-      { icon: '#icon-xiangji', title: 'Discover', url: '/discover' },
-      { icon: '#icon-guozhi', title: 'Activity', url: '/activity' },
-      { icon: '#icon-pijiu', title: 'TopCharts', url: '/topcharts' }
+      { icon: '#icon-jitui', title: 'Playing', url: '/app/playing' },
+      { icon: '#icon-xiangji', title: 'Discover', url: '/app/discover' },
+      { icon: '#icon-guozhi', title: 'Activity', url: '/app/activity' },
+      { icon: '#icon-pijiu', title: 'TopCharts', url: '/app/topcharts' }
     ];
   }
 
