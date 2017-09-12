@@ -1,0 +1,15 @@
+.banner {
+  width: 100%;
+  min-height: 600px;
+  filter:grayscale(1) brightness(120%);
+  position: absolute;
+  z-index: -1;
+}
+
+.mask {
+  width: 100%;
+  min-height: 600px;
+  position: absolute;
+  background-image: radial-gradient(at 10% 30%, #191970 0%, #274a5d 100%);
+  opacity: 0.9;
+}
